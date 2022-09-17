@@ -12,6 +12,7 @@ Some cons about this interpreter:
 ---------------------------------
     -Isn't as small as the actual interpreter
     -It's probably slower than the actual thing
+    -Can't handle nested loops
 
 AUTHOR
 ------
