@@ -33,7 +33,7 @@ int main(int ac, char **av)
 
 void com(unsigned char *buff, int size_of_buff)
 {
-    int i = 0, j;
+    int i = 0, j, temp = 0, depth = 0;
     while(buff[i] && i < size_of_buff)
     {
         switch(buff[i])
@@ -69,8 +69,22 @@ void com(unsigned char *buff, int size_of_buff)
                 read(1, &arr[pointer], 1);
                 break;
             case '[':
-                    j = i;
-                    while (buff[j] && buff[j] != ']') j++;
+                    j = i + 1;
+                    depth++;
+                    while (buff[j])
+                    {
+                        if (buff[j] == ']')
+                        {
+                            depth--;
+                            temp = j;
+                        }
+                        if (buff[j] == '[')
+                            depth++;
+                        if (depth == 0)
+                            break;
+                        j++;
+                    }
+                    j = temp;
                     while (arr[pointer] != 0)
                         com(&buff[i + 1], j - i);
                     i = j;
