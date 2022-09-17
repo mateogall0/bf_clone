@@ -11,7 +11,6 @@ Compile
 Some cons about this interpreter:
 ---------------------------------
     -Isn't as small as the actual interpreter
-    -Can't take user inupt(yet)
     -It's probably slower than the actual thing
 
 AUTHOR

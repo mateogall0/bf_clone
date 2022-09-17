@@ -65,6 +65,9 @@ void com(unsigned char *buff, int size_of_buff)
             case '.':
                 write(1, &arr[pointer], 1);
                 break;
+            case ',':
+                read(1, &arr[pointer], 1);
+                break;
             case '[':
                     j = i;
                     while (buff[j] && buff[j] != ']') j++;
