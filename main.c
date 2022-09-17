@@ -1,5 +1,5 @@
 #include "main.h"
-#define HEAP_SIZE 3000
+#define HEAP_SIZE 30000
 unsigned int pointer = 0;
 unsigned char *arr = 0;
 int main(int ac, char **av)
