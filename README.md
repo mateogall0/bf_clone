@@ -13,6 +13,11 @@ Some cons about this interpreter:
     -Isn't as small as the actual interpreter
     -It's probably slower than the actual thing
 
+Pros
+----
+    -Is actually safer to use
+    -Full memory management and safety measures
+
 AUTHOR
 ------
 Mateo Gallo
